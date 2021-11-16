@@ -1,10 +1,10 @@
 <template>
-$END$
+<div>食品列表</div>
 </template>
 
 <script>
 export default {
-name: "FoodList"
+  name: "FoodList"
 }
 </script>
 

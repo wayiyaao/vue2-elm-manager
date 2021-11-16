@@ -1,10 +1,10 @@
 <template>
-$END$
+<div>用户分布</div>
 </template>
 
 <script>
 export default {
-name: "UserProfile"
+  name: "UserProfile"
 }
 </script>
 

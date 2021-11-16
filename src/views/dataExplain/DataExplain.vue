@@ -1,10 +1,10 @@
 <template>
-$END$
+<div>说明</div>
 </template>
 
 <script>
 export default {
-name: "dataExplain"
+  name: "dataExplain"
 }
 </script>
 

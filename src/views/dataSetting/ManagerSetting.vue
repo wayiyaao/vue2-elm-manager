@@ -1,10 +1,10 @@
 <template>
-$END$
+  <div>管理员设置</div>
 </template>
 
 <script>
 export default {
-name: "ManagerSetting"
+  name: "ManagerSetting"
 }
 </script>
 

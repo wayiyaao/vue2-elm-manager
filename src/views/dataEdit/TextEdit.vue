@@ -1,10 +1,10 @@
 <template>
-$END$
+<div>文本编辑</div>
 </template>
 
 <script>
 export default {
-name: "TextEdit"
+  name: "TextEdit"
 }
 </script>
 
