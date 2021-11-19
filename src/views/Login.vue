@@ -34,6 +34,20 @@ export default {
       },
     }
   },
+  watch: {
+    adminInfo: function (newValue){
+      if (newValue.id) {
+        this.$message({
+          type: 'success',
+          message: '检测到您之前登录过，将自动登录'
+        });
+        this.$router.push('manage')
+      }
+    }
+  },
+  mounted() {
+
+  },
   methods:{
     submitForm(formName){
       const data={
@@ -43,12 +57,12 @@ export default {
       this.$refs[formName].validate(async (valid) => {
         if (valid) {
           const res = await this.axios.post('//elm.cangdu.org/admin/login',data)
-          // console.log(res.data)
           if(res.data.status === 1){
             this.$message({
               type: 'success',
               message: '登录成功'
             })
+            console.log(document.cookie)
             setTimeout(() =>{
               this.$router.replace('/home')
             },500)

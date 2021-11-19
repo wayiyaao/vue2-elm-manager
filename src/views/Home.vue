@@ -22,8 +22,8 @@
             <i class="el-icon-plus"></i>
             <span>添加数据</span>
           </template>
-          <el-menu-item index="/home/storeList">添加店铺</el-menu-item>
-          <el-menu-item index="/home/foodList">添加商品</el-menu-item>
+          <el-menu-item index="/home/storeAdd">添加店铺</el-menu-item>
+          <el-menu-item index="/home/foodAdd">添加商品</el-menu-item>
         </el-submenu>
         <el-submenu index="3">
           <template slot="title">
@@ -192,7 +192,7 @@ export default {
     top: 0;
     left: 0;
     z-index: 999;
-    width: 200px;
+    width: 320px;
     height: 100%;
     background-color: rgb(50, 64, 87);
     .el-menu-vertical-demo{
@@ -200,7 +200,7 @@ export default {
     }
   }
   .content-inner{
-    margin-left: 200px;
+    margin-left: 320px;
     height: 100%;
     .topBar{
       height: 60px;
