@@ -208,7 +208,7 @@ export default {
       specsFormVisible:false,
     }
   },
-  mounted() {
+  created() {
     this.initData()
   },
   methods:{
@@ -232,7 +232,7 @@ export default {
     //食品列表
     async getFoodsList(){
       const {data} = await getFoods(this.offset,this.limit,this.restaurant_id)
-      console.log(data)
+      // console.log(data)
       this.tableData = []
       data.forEach((item,index) =>{
         const tableData = {};
@@ -248,14 +248,12 @@ export default {
         tableData.index = index;
         this.tableData.push(tableData);
       })
-      console.log(this.tableData)
+      // console.log(this.tableData)
     },
     //列表展开/折叠
     expandChange(row,expandedRow){
       if(expandedRow.length !== 0){
         this.getSelectItemData(row)
-      }else{
-
       }
     },
     //根据店铺id和分类id获取店铺名称和分类名称

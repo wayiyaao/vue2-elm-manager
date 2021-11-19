@@ -195,7 +195,7 @@ export const getUserCount = () => axios.get('//elm.cangdu.org/v1/users/count');
  * 获取订单列表
  */
 
-export const getOrderList = data => axios.get('//elm.cangdu.org/bos/orders', data);
+export const getOrderList = (offset,limit) => axios.get('//elm.cangdu.org/bos/orders?offset='+offset+'&limit='+limit);
 
 /**
  * 获取订单数量
