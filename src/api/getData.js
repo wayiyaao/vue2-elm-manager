@@ -60,7 +60,7 @@ export const adminDayCount = date => axios.get('//elm.cangdu.org/statis/admin/' 
  * 管理员列表
  */
 
-export const adminList = data => axios.get('//elm.cangdu.org/admin/all', data);
+export const adminList = (offset,limit) => axios.get('//elm.cangdu.org/admin/all?offset='+offset+'&limit='+limit);
 
 /**
  * 管理员数量
